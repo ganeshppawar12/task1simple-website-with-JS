@@ -1,0 +1,135 @@
+html {
+    font-size: 14px;
+  }
+  @media (min-width: 768px) {
+    html {
+      font-size: 16px;
+    }
+  }
+  
+  .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  a{
+    text-decoration: none;
+  }
+  nav, nav a{
+    /* display: flex; */
+    /* align-items:flex-end !important; */
+    /* justify-content: flex-start !important; */
+    /* gap: 10px; */
+    text-decoration: none;
+  }
+  .container {
+    max-width: 960px;
+    /* display: flex; */
+    position: relative;
+  }
+  .card-deck{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .card{
+    min-width:300px !important;
+  }
+
+  .highlighted{
+
+
+    border: 3px solid blue;
+  }
+  .pricing-header {
+    max-width: 700px;
+  }
+  
+  .card-deck .card {
+    min-width: 220px;
+  }
+  
+  .border-top { border-top: 1px solid #e5e5e5; }
+  .border-bottom { border-bottom: 1px solid #e5e5e5; }
+  
+  .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+  
+
+  /* .formContainer{
+    /* height: 100vh; *
+    background: #000;
+    width: 100%;
+  } */
+  .FormSubmition{
+    background: #faf9f9;
+    width: 40vw;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    top: 30%;
+    left: 30%;
+    padding: 15px 10px;
+    border-radius: 5px;
+    box-shadow: 1px 0px 10px rgb(224, 224, 224); 
+    display: none;
+
+  }
+  .close{
+    font-size: 18px;
+    color: rgb(255, 117, 117);
+    transition: all 1s ease;
+  cursor: pointer;
+  }
+  .close:active{
+    font-size: 16px;
+    color: rgb(244, 76, 76);
+    transition: all 1s ease;
+  }
+  .formDetails{
+    display: flex;
+    flex-direction: column;
+  }
+  .formDetails input, textarea{
+    border: 0.6px solid rgb(148, 148, 148);
+    outline: none;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+  }
+  .formSubmit{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  .formSubmit button{
+    background: #5ea1ff;
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+
+  }
+
+  .formSubmit button:hover{
+    background: #388bff;
+    
+  }
+  .formTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media screen  and (max-width:600px){
+    .card-deck{
+       flex-direction: column;
+      }
+    
+  }
